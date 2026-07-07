@@ -26,7 +26,6 @@ The goal of this project is to build a small database server from the ground up 
 ```text
 EmberDB-tcp/
 ├── Makefile
-├── README.md
 ├── backup/
 │   └── Backup.txt
 ├── build/
@@ -47,6 +46,7 @@ EmberDB-tcp/
     ├── main.c
     ├── persistance.c
     └── server.c
+
 ```
 
 ---
