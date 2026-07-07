@@ -1,0 +1,60 @@
+============================================================
+  EMBERDB COMMANDS
+============================================================
+ BASIC COMMANDS
+------------------------------------------------------------
+ PING
+    Checks if the server is alive.
+    Response: PONG
+
+ SET <key> <value>
+    Stores a key-value pair.
+    Example: SET name Jayce
+
+ GET <key>
+    Retrieves the value stored at a key.
+    Example: GET name
+
+ EXISTS <key>
+    Checks whether a key exists.
+    Example: EXISTS name
+
+ DEL <key>
+ DELETE <key>
+    Deletes a key-value pair.
+    Example: DEL name
+
+------------------------------------------------------------
+ BACKUP / PERSISTENCE COMMANDS
+------------------------------------------------------------
+ SAVE
+    Creates a backup file from the current in-memory database.
+
+ BACKUPWIPE
+    Deletes the saved backup data.
+
+ MAXWIPE
+    Clears the current in-memory database.
+    This does not delete the backup file.
+
+------------------------------------------------------------
+ SERVER COMMANDS
+------------------------------------------------------------
+ QUIT
+    Disconnects the current client.
+
+ END
+    Shuts down the server.
+    Unsaved data will be lost.
+
+============================================================
+ Example Session
+------------------------------------------------------------
+ PING
+ SET name Jayce
+ GET name
+ EXISTS name
+ DEL name
+ SAVE
+ QUIT
+============================================================
